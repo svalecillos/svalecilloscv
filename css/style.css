@@ -1,0 +1,59 @@
+/*body{
+    background: #29b6f6  ;
+}*/
+
+html{
+    /*font-family: 'Sintony', sans-serif;*/
+    background: rgb(247, 247, 247);
+}
+
+nav{
+    -webkit-transition: ease all 0.3s;
+}
+
+/*Clases*/
+.article{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portada{
+    background: #000000;
+    background-size: cover;
+    position: relative;
+    min-height: 660px;
+    max-height: 600px;
+}
+
+.portada:before {
+    content: "";
+    background: rgba(4, 8, 29, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-fijo{
+    background: #fff;
+}
+
+.nav-fijo a{
+    color: #424242;
+}
+
+#nav a:hover {
+    background: none;
+    color: #4fc3f7;
+}
+
+#nav ul > .current > a {
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    height: 40px;
+}
+
+.sidenav .current a, #nav .nav-wrapper .current a {
+    background: #4fc3f7;
+    color:white;
+}
