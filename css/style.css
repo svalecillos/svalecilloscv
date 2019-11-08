@@ -41,19 +41,28 @@ nav{
     color: #424242;
 }
 
+.current{
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    height: 40px;
+    background: #4fc3f7;
+    color:white;
+}
+
 #nav a:hover {
     background: none;
     color: #4fc3f7;
 }
 
-#nav ul > .current > a {
+/*#nav ul > .current > a {
     border-radius: 50px;
     position: relative;
     top: 10px;
     height: 40px;
-}
+}*/
 
-.sidenav .current a, #nav .nav-wrapper .current a {
+/*.sidenav .current a, #nav .nav-wrapper .current a {
     background: #4fc3f7;
     color:white;
-}
+}*/
