@@ -31,7 +31,7 @@
                 </nav>
                 <!--Menu para moviles-->
                 <ul class="sidenav nav" id="mobile-demo">
-                    <li class="current"><a href="#inicio">Inicio</a></li>
+                    <li><a class="current" href="#inicio">Inicio</a></li>
                     <li><a href="#about">Sobre mi</a></li>
                     <li><a href="#skill">Skills</a></li>
                     <li><a href="#works">Portafolio</a></li>
@@ -44,26 +44,6 @@
         <section id="about" class="article scrollspy">
             <div class="row">
                 <h3 class="center"><strong>Sobre<span class="light-blue-text"> mi</span></strong></strong></h3>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
-            </div>
-        </section>
-        <section id="skill" class="article scrollspy">
-            <div class="row">
-                <h3 class="center"><strong>Mis <span class="light-blue-text">Skills</span></strong></h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.ç
                 Architecto sed, ab vero recusandae ullam adipisci molestiae optio 
                 eveniet hic expedita distinctio aut ipsam dignissimos inventore voluptates qui possimus? Soluta, officia?
@@ -81,7 +61,29 @@
                 aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Est quo reprehenderit repellat, cum molestiae totam itaque sit
-                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, ducimus voluptates ullam culpa!
+                aut tempora. Distinctio dolorum explicabo ad odit expedita aliquam, duci
+            </div>
+        </section>
+        <section id="skill" class="article scrollspy">
+            <div class="row">
+                <h3 class="center"><strong>Mis <span class="light-blue-text">Skills</span></strong></h3>
+                <div class="col s12 m6 l6">
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                        <div class="skill-bar-percent">50%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #d35400;"><span>Javascript</span></div>
+                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #d35400;"><span>Angular</span></div>
+                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                        <div class="skill-bar-percent">50%</div>
+                    </div>                   
+                </div>
             </div>
         </section>
         <section id="works" class="article scrollspy">
@@ -185,7 +187,16 @@
         </section>
         <footer></footer>
     </main>
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+            /*jQuery(document).ready(function(){
+                jQuery('.skillbar').each(function(){
+                    jQuery(this).find('.skillbar-bar').animate({
+                            width:jQuery(this).attr('data-percent')
+                    },1000);
+                });
+            });*/
+        </script>
     <script src="js/materialize/materialize.min.js"></script>
     <script src="js/particles/particles.min.js"></script>
     <script src="js/app.js"></script>
