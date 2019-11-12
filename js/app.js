@@ -30,8 +30,8 @@ $(window).on('scroll', function () {
         highlightLink('skill'); 
         $('.skillbar').each(function(){
           $(this).find('.skillbar-bar').animate({
-              width:jQuery(this).attr('data-percent')
-          },1000);
+              width:$(this).attr('data-percent')
+          },500);
         });
       }
    if( position2 > $("#works").offset().top) {  highlightLink('works'); }
