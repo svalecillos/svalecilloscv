@@ -24,14 +24,8 @@ p{
     padding-bottom: 60px;
 }
 
-.contenedor{
-	display: inline-block;
-	align-items: center;
-	height: 150px;
-	justify-content: center;
-}
-
 .circulo{
+	display: inline-block;
 	color: white;
 	width: 100px;
 	height: 100px;
@@ -62,6 +56,10 @@ p{
     height: 100%;
 }
 
+.text-about{
+	height: 100px;
+}
+
 .text-portada{
 	position: absolute;
 	width: 100%;
@@ -90,6 +88,10 @@ p{
 	-webkit-box-shadow: 2px 10px 0px -12px rgba(0,0,0,0.29);
 	-moz-box-shadow: 2px 10px 0px -12px rgba(0,0,0,0.29);
 	box-shadow: 2px 10px 0px -12px rgba(0,0,0,0.29);
+}
+
+.label{
+	font-size: 18pt;
 }
 
 /* skillbar */

@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
 
     //Metodo scroll para poner el nav transparente dependiendo donde este el scroll
-    $(window).scroll(function(){
+    /*$(window).scroll(function(){
         if($(window).scrollTop()>580){
           $('#nav').removeClass('N/A transparent');
           $('#nav').addClass('nav-fijo');
@@ -13,7 +13,7 @@ $(document).ready(function(){
           $('#nav').removeClass('nav-fijo');
           $('#nav').addClass('N/A transparent');
         }
-      });
+      });*/
 
     $('.sidenav').sidenav();// -> Iniciamos el boton del menu para moviles
 });
@@ -24,8 +24,16 @@ $(window).on('scroll', function () {
   let posicion = $(window).scrollTop();
   let position2 = posicion+60;
    
-   if( position2 > $("#home").offset().top) { highlightLink('home'); }
-   if( position2 > $("#about").offset().top) {  highlightLink('about'); }
+  if( position2 > $("#home").offset().top) { highlightLink('home'); }
+
+   if( position2 > $("#about").offset().top) {  
+        $('#nav').removeClass('N/A transparent');
+        $('#nav').addClass('nav-fijo');
+        highlightLink('about'); 
+      }else{
+        $('#nav').removeClass('nav-fijo');
+        $('#nav').addClass('N/A transparent');
+      }
    if( position2 > $("#skill").offset().top) {  
         highlightLink('skill'); 
         $('.skillbar').each(function(){
